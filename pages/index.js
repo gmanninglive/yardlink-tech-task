@@ -1,6 +1,7 @@
 import Head from "next/head";
 import MarketingBanner from "../components/banners/MarketingBanner";
 import Categories from "../components/categories/Categories";
+import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
 import Featured from "../components/products/Featured";
@@ -25,6 +26,7 @@ export default function Home() {
         <Featured />
         <Categories />
       </main>
+      <Footer />
     </div>
   );
 }
