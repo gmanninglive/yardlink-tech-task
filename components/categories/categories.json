@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Tool Hire",
+        "thumbnail" : "/images/categories/toolhire.jpg"
+    },
+    {
+        "id": 2,
+        "name": "COVID-19 Safe Working",
+        "thumbnail" : "/images/categories/covid.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Plant Hire",
+        "thumbnail" : "/images/categories/plant.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Powered Access Hire",
+        "thumbnail" : "/images/categories/powered-access.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Site Welfare Hire",
+        "thumbnail" : "/images/categories/site-welfare.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Operated Hire",
+        "thumbnail" : "/images/categories/operated-hire.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Waste Disposal Hire",
+        "thumbnail" : "/images/categories/skip.jpg"
+    }
+
+]

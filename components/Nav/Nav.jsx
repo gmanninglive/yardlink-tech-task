@@ -6,7 +6,7 @@ import Link from "next/Link";
 export default function Nav() {
   return (
     <>
-      <div className="w-full fixed top-0 flex py-1 px-5 gap-x-4 flex justify-between items-center bg-white z-[100]">
+      <div className="w-full fixed top-0 flex py-1 px-5 gap-x-4 flex justify-between items-center bg-white border-b-2 border-yardblue z-[100] ">
         {/* Logo */}
         <Image
           src="/branding/yardlink-logo.svg"

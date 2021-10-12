@@ -1,7 +1,8 @@
 import Head from "next/head";
 import MarketingBanner from "../components/banners/MarketingBanner";
+import Categories from "../components/categories/Categories";
 import Hero from "../components/hero/Hero";
-import Nav from "../components/Nav/Nav";
+import Nav from "../components/nav/Nav";
 import Featured from "../components/products/Featured";
 
 export default function Home() {
@@ -19,10 +20,10 @@ export default function Home() {
       <main className="flex flex-col w-full flex-1 relative">
 
         <Nav />
-
         <Hero />
         <MarketingBanner />
         <Featured />
+        <Categories />
       </main>
     </div>
   );

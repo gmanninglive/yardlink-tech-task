@@ -1,5 +1,6 @@
 import BulletBanner from "../banners/BulletBanner";
 
+// TODO Add Link to Logo
 // TODO Maybe make search bar into component
 
 export default function Hero() {
