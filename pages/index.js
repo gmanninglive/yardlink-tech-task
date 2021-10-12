@@ -2,6 +2,7 @@ import Head from "next/head";
 import MarketingBanner from "../components/banners/MarketingBanner";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/Nav/Nav";
+import Featured from "../components/products/Featured";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
 
         <Hero />
         <MarketingBanner />
+        <Featured />
       </main>
     </div>
   );
