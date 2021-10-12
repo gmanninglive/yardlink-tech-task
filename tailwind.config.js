@@ -3,10 +3,27 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        orange: "#E9520F",
+        yardblue:"#102754"
+      },
+
+      translate:{
+        account: "translate(12%, 0)", 
+      },
+
+      skew: {
+
+        '45': '45deg',
+      }
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
 }
+
+
+// "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
