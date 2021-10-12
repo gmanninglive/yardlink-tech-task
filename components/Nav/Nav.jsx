@@ -6,10 +6,10 @@ import Link from "next/Link";
 export default function Nav() {
   return (
     <>
-      <div className="w-full fixed top-0 flex py-1 px-5 gap-x-4 flex justify-between items-center">
+      <div className="w-full fixed top-0 flex py-1 px-5 gap-x-4 flex justify-between items-center bg-white">
         {/* Logo */}
         <Image
-          src="/yardlink-logo.svg"
+          src="/branding/yardlink-logo.svg"
           alt="YardLink Logo"
           width="210px"
           height="75px"
@@ -18,7 +18,7 @@ export default function Nav() {
         {/* Categories */}
         <button className="">
           <Image
-            src="/icon-menu.svg"
+            src="/branding/icon-menu.svg"
             alt="Categories Menu"
             width="25"
             height="25"
@@ -29,7 +29,7 @@ export default function Nav() {
         {/* Phone */}
         <div className="hidden md:flex items-center gap-x-1">
           <Image
-            src="/icon-phone.svg"
+            src="/branding/icon-phone.svg"
             alt="Categories Menu"
             width="25"
             height="25"
@@ -40,7 +40,7 @@ export default function Nav() {
         </div>
         {/* Basket */}
         <div className="hidden md:flex flex-col items-center items-center gap-x-1">
-          <Image src="/icon-basket.svg" alt="Basket" width="25" height="25" />
+          <Image src="/branding/icon-basket.svg" alt="Basket" width="25" height="25" />
           <p className="text-yardblue text-sm font-bold ">My Booking</p>
         </div>
 

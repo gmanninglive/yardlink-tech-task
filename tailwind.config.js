@@ -16,7 +16,12 @@ module.exports = {
       skew: {
 
         '45': '45deg',
-      }
+      },
+
+      backgroundImage: {
+        'hero': "url('/images/LandingBackground.jpg')",
+        
+       }
     },
   },
   variants: {

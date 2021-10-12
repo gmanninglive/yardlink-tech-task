@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/hero/Hero";
 import Nav from "../components/Nav/Nav";
 
 export default function Home() {
@@ -13,9 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 relative">
+      <main className="flex flex-col w-full flex-1 relative">
 
         <Nav />
+
+        <Hero />
       </main>
     </div>
   );
