@@ -1,4 +1,5 @@
 import Head from "next/head";
+import MarketingBanner from "../components/banners/MarketingBanner";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/Nav/Nav";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Nav />
 
         <Hero />
+        <MarketingBanner />
       </main>
     </div>
   );

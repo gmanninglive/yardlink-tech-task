@@ -5,7 +5,7 @@ import BulletBanner from "../banners/BulletBanner";
 export default function Hero() {
   return (
     <>
-      <div className="h-screen md:p-20 ">
+      <div className="w-full h-full md:p-20 ">
         {/* Background Image and Colour Overlay */}
         <div className="absolute -top-20 left-0 bg-gradient-to-br from-yardblue to-yardblue bg-blend-overlay  w-full h-screen z-[-10]"></div>
         <div className="absolute -top-20 left-0 w-full h-screen bg-hero bg-cover mix-blend-overlay z-[-10]"></div>
