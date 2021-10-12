@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Andrei",
+        "company": "Gama Windows",
+        "text": "“I was advised to try YardLink after I had called all other tool hire companies and was real frustrated that no one could provide what I needed at a timely delivery. YardLink sorted it out, really 5 stars for service. Next time my company needs plant or tools, it’s going to be yardlink.com”",
+        "image": "/images/customers/Andrei_Titarenko.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Matt",
+        "company": "MJC Properties",
+        "text": "“Great site for all of your hire needs, makes hiring equipment so much easier. Excellent value and excellent service. Fully recommend!”",
+        "image": "/images/customers/Matthew_Jones.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Richard",
+        "company": "Barker Brothers Construction",
+        "text": "“Hiring plant and tools has never been easier. We use YardLink for all our kit, from diggers to wood chippers and even site offices. Great quality equipment always delivered on time!”",
+        "image": "/images/customers/Richard_Barker.jpg"
+    }
+]

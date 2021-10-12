@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
 import Featured from "../components/products/Featured";
+import Reviews from "../components/reviews/Reviews";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <MarketingBanner />
         <Featured />
         <Categories />
+        <Reviews />
       </main>
       <Footer />
     </div>

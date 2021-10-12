@@ -16,7 +16,7 @@ export default function StandardCard({ data }) {
 
   return (
     <>
-      <div className="w-2/12 flex flex-col flex-grow items-center bg-[#F8F8F5]">
+      <div className="w-2/12 flex flex-col flex-grow items-center ">
         <div className="flex justify-start gap-x-4">
           <Image src={thumbnail} width={100} height={100} alt={name} />
 
