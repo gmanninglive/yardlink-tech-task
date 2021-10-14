@@ -2,7 +2,7 @@
 import StandardCard from '../cards/StandardCard';
 import categories from './categories.json';
 
-export default function Categories (){
+export default function Categories ({data}){
 
     return (
     <>
@@ -11,7 +11,7 @@ export default function Categories (){
         <h3 className="py-12 text-2xl font-bold">Featured Products</h3>
         {/* Categories */}
         <div className="flex flex-wrap  gap-x-6">
-          {categories.map((category, idx) => {
+          {data.map((category, idx) => {
             return (
                 <StandardCard data={category} key={idx} />
             );
