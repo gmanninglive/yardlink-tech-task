@@ -14,3 +14,7 @@ p {
 h1 h2 h3 {
     font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
+.createaccount::before{ 
+    content: '';
+    @apply bg-orange w-[250px] h-[50px] absolute -top-12 left-4  skew-x-45 z-0;
+}

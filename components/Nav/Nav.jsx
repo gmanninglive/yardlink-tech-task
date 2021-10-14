@@ -52,14 +52,14 @@ export default function Nav() {
 
         {/* Create Account */}
         <div className="hidden md:block relative w-[200px]">
-          <div className=" bg-orange w-[250px] h-[50px] absolute -top-12 left-4  skew-x-45 border-bl-sm z-0 bg-clip-border">
-
-          </div>
+          <div className="createaccount">
           <Link href="#" className="">
-            <a className="absolute -top-8 right-5 text-white  underline z-10">
+            <a className="absolute -top-8 left-12 text-white  underline z-10">
               Create Account
             </a>
           </Link>
+
+          </div>
         </div>
         </span>
       </div>
