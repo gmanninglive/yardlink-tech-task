@@ -28,7 +28,7 @@ module.exports = {
 
       backgroundImage: {
         'hero': "url('/images/LandingBackground.jpg')",
-        'select-icon': "url('/Polygon.svg')"
+        'select-icon': "url('/branding/icon-arrow.svg')"
        }
     },
   },
