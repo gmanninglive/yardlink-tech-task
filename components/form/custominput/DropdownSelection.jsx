@@ -32,7 +32,7 @@ export default function DropdownSelection({
       <>
         <div className="relative" ref={ref}>
           <button
-            className={`${className} inline-flex items-center justify-between`}
+            className={`${className} inline-flex items-center justify-between font-bold`}
             type="button"
             onClick={() => setIsOpen(!isOpen)}
           >
