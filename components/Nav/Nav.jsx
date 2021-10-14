@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 
 // TODO Fix up placement, fix up create account skewed box
 
