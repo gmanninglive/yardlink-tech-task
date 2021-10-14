@@ -53,7 +53,7 @@ export default function Nav() {
         {/* Create Account */}
         <div className="hidden md:block relative w-[200px]">
           <div className="createaccount">
-          <Link href="#" className="">
+          <Link href="/creditapplication" className="">
             <a className="absolute -top-8 left-12 text-white  underline z-10">
               Create Account
             </a>
