@@ -7,7 +7,7 @@ import Nav from "../components/nav/Nav";
 import Featured from "../components/products/Featured";
 import Reviews from "../components/reviews/Reviews";
 
-export default function Home() {
+export default function Home({data}) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative">
       <Head>
@@ -24,11 +24,27 @@ export default function Home() {
         <Nav />
         <Hero />
         <MarketingBanner />
-        <Featured />
-        <Categories />
+        <Featured data={data.featured} />
+        <Categories data={data.categories} />
         <Reviews />
       </main>
       <Footer />
     </div>
   );
+}
+
+// Consume API on serverside
+export async function getServerSideProps(context) {
+  const res = await fetch("https://my-json-server.typicode.com/yardlynk/yardlink-frontend-test-data/db")
+  const data = await res.json()
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {data}, 
+  }
 }
