@@ -2,7 +2,7 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import DropdownSelection from "./custominput/DropdownSelection";
 
-export default function CreditApplicationForm() {
+export default function CreditApplicationForm({handleSubmit, values}) {
   // Takes touched input fields and errors. Returns style for valid/invalid fields
   function handleValidation(touched, errors) {
     if (!!touched && !!errors) return "bg-lightred border-darkred";
@@ -12,13 +12,12 @@ export default function CreditApplicationForm() {
 
   return (
     <Formik
-      initialValues={initialValues}
+      initialValues={values? values : initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          console.log(values);
-          setSubmitting(false);
-        }, 400);
+      onSubmit={(values, isSubmitting) => {
+          handleSubmit(values);
+          console.log(isSubmitting)
+
       }}
     >
       {({ isSubmitting, errors, touched }) => (
@@ -267,7 +266,7 @@ export default function CreditApplicationForm() {
 
           <button
             type="submit"
-            disabled={isSubmitting}
+            
             className=" my-6 px-20 py-2 rounded-md bg-orange text-white text-center "
           >
             Continue
@@ -335,7 +334,6 @@ export const validationSchema = Yup.object({
     .max(15, "Must be 10 characters or less")
     .required("Required"),
   projects_size: Yup.string()
-    .max(15, "Must be 10 characters or less")
     .required("Required"),
   employees: Yup.string()
     .max(15, "Must be 10 characters or less")
