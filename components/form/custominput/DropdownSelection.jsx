@@ -35,6 +35,7 @@ export default function DropdownSelection({
             className={`${className} inline-flex items-center justify-between font-bold`}
             type="button"
             onClick={() => setIsOpen(!isOpen)}
+            data-testid="dropdownButton"
           >
             {title}
             <img src="/branding/icon-arrow.svg" alt="open menu" className={`${isOpen && "transform rotate-180"} transition-all ease-in-out`} />
@@ -46,7 +47,7 @@ export default function DropdownSelection({
             } w-full absolute top-15 bg-white z-50 divide-y divide-gray-100 grid border-2 p-1 rounded-b-md`}
             id="dropdown"
           >
-            {data.map((option, idx) => (
+            {data && data.map((option, idx) => (
               <label
                 htmlFor={option}
                 className="w-full p-2 relative z-8 input-container"
@@ -58,6 +59,7 @@ export default function DropdownSelection({
                   value={option}
                   name={fieldName}
                   className="opacity-0 absolute left-0 bottom-0 h-full w-full cursor-pointer z-10"
+                  data-testid={`dropdownField${idx}`}
                 />
                 {/* span classname gives green border when checked */}
                 <span className="checkbox" />
