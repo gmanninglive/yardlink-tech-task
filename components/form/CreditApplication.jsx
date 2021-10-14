@@ -1,10 +1,12 @@
 import { Formik, Form, Field } from "formik";
+import * as Yup from 'yup';
 import DropdownSelection from './custominput/DropdownSelection'
 
 export default function CreditApplicationForm(){
     return(
     <Formik
               initialValues={initialValues}
+              validationSchema={validationSchema}
               onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
                   console.log(values);
@@ -85,3 +87,11 @@ export const initialValues = {
     po_required: "",
     credit_required: "",
   };
+
+  export const validationSchema = Yup.object({
+    business_nature: Yup.array().of(Yup.string()).min(1, "Required"),
+    business_role: Yup.array().of(Yup.string()).min(1, "Required"),
+    company_type: Yup.string()
+      .max(15, "Must be 15 characters or less")
+      .required("Required"),
+  });
