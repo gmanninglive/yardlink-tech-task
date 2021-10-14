@@ -55,7 +55,7 @@ export default function Nav() {
           <div className=" bg-orange w-[250px] h-[50px] absolute -top-12 left-4  skew-x-45 border-bl-sm z-0 bg-clip-border">
 
           </div>
-          <Link href="#" className="">
+          <Link href="/creditapplication" className="">
             <a className="absolute -top-8 right-5 text-white  underline z-10">
               Create Account
             </a>
