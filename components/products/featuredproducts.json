@@ -1,33 +1,28 @@
 [
-    {
-        "id": 1,
-        "name": "1.5T Mini Digger",
-        "price" : "£170 - £200",
-        "thumbnail" : "/images/products/minidig.jpg"
-    },
+   
     {
         "id": 2,
-        "name": "12.2m Bi-Fuel Cherry Picker",
+        "title": "12.2m Bi-Fuel Cherry Picker",
         "price" : "£230 - £290",
-        "thumbnail" : "/images/products/cherry-pick.jpg"
+        "image_url" : "/images/products/cherry-pick.jpg"
     },
     {
         "id": 3,
-        "name": "1T Hi Tip Dumper",
+        "title": "1T Hi Tip Dumper",
         "price" : "£130 - £150",
-        "thumbnail" : "/images/products/dumper.jpg"
+        "image_url" : "/images/products/dumper.jpg"
     },
     {
         "id": 4,
-        "name": "5.2m Access Tower Single Width",
+        "title": "5.2m Access Tower Single Width",
         "price" : "£50 - £60",
-        "thumbnail" : "/images/products/access-tower.jpg"
+        "image_url" : "/images/products/access-tower.jpg"
     },
     {
         "id": 5,
-        "name": "2.0T Telehandler - 4m Lift Height",
+        "title": "2.0T Telehandler - 4m Lift Height",
         "price" : "£260 - £320",
-        "thumbnail" : "/images/products/telehandler.jpg"
+        "image_url" : "/images/products/telehandler.jpg"
     }
 
 ]
