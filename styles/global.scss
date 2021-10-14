@@ -61,6 +61,11 @@ body {
   }
 }
 
+.createaccount::before{ 
+  content: '';
+  @apply bg-orange w-[250px] h-[50px] absolute -top-12 left-4  skew-x-45 z-0;
+}
+
 .checkbox {
   @apply w-full h-full absolute bottom-0 left-0 z-0 opacity-50;
 }

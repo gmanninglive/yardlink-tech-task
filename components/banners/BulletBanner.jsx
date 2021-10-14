@@ -10,9 +10,9 @@ export default function BulletBanner() {
         <h1 className="text-xl font-bold">{bulletPoints.title}</h1>
         {/* Bullet Points */}
         <ul className="mt-6 flex flex-col gap-y-6">
-          {bulletPoints.bullets.map((bullet) => {
+          {bulletPoints.bullets.map((bullet, idx) => {
             return (
-              <li className="flex gap-x-2 items-center">
+              <li className="flex gap-x-2 items-center" key={idx}>
                 <span className="p-1 mt-1 px-2 border-2 border-orange rounded-full ">
                   <Image
                     src="/branding/icon-tick.svg"

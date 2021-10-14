@@ -1,25 +1,25 @@
 [
    
     {
-        "id": 2,
+        "id": 1,
         "title": "12.2m Bi-Fuel Cherry Picker",
         "price" : "£230 - £290",
         "image_url" : "/images/products/cherry-pick.jpg"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "1T Hi Tip Dumper",
         "price" : "£130 - £150",
         "image_url" : "/images/products/dumper.jpg"
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "5.2m Access Tower Single Width",
         "price" : "£50 - £60",
         "image_url" : "/images/products/access-tower.jpg"
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "2.0T Telehandler - 4m Lift Height",
         "price" : "£260 - £320",
         "image_url" : "/images/products/telehandler.jpg"

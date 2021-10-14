@@ -11,7 +11,7 @@ export default function Featured({data}) {
   return (
     <>
       <div className="p-12 ">
-        {/* Title */}
+        Title
         <h3 className="py-12 text-2xl font-bold">Featured Products</h3>
         {/* Products */}
         <div className="flex flex-wrap  gap-x-6">

@@ -8,9 +8,9 @@ export default function MarketingBanner () {
         <div className="py-20 px-20 flex flex-col items-center gap-y-12 bg-[#F8F8F5]">
             <h1 className="text-2xl font-bold">{title}</h1>
             <ul className="flex justify-evenly flex-wrap">
-                {bullets.map((bullet) => {
+                {bullets.map((bullet, idx) => {
                     return (
-                        <li className="w-1/4 text-center text-xl">{bullet}</li>
+                        <li className="w-1/4 text-center text-xl" key={idx}>{bullet}</li>
                     )
                 })}
             </ul>

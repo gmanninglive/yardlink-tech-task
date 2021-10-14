@@ -8,6 +8,7 @@ import Featured from "../components/products/Featured";
 import Reviews from "../components/reviews/Reviews";
 
 export default function Home({data}) {
+  console.log(data)
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative">
       <Head>
