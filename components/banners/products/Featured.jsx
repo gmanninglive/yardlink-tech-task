@@ -2,6 +2,10 @@ import StandardCard from "../../cards/StandardCard";
 
 import featuredProducts from "./featuredproducts.json";
 
+/**
+ * @param {array} data - Product data 
+ * @returns Cards mapped to data provided
+ */
 export default function Featured({data}) {
 
   return (
