@@ -30,6 +30,7 @@ export default function DropdownSingle({ title, fieldName, data, className }) {
           className={`${className} inline-flex items-center justify-between font-bold`}
           type="button"
           onClick={() => setIsOpen(!isOpen)}
+          data-testid="dropdownSingleButton"
         >
           {title}
           <img
@@ -46,7 +47,7 @@ export default function DropdownSingle({ title, fieldName, data, className }) {
             isOpen ? "block" : "hidden"
           } w-full absolute top-15 bg-white z-50 divide-y divide-gray-100 grid border-2 border-t-0 border-lightblue rounded-b-md `}
         >
-          {data.map((option, idx) => (
+          {data && data.map((option, idx) => (
             <label
               htmlFor={option}
               className="bg-transparent w-full p-2 relative z-8 input-container hover:bg-lightblue "
@@ -60,6 +61,7 @@ export default function DropdownSingle({ title, fieldName, data, className }) {
                  absolute left-0 bottom-0 h-full w-full cursor-pointer z-10 dropdown-single"
                 value={option}
                 onClick={() => setIsOpen(false)}
+                data-testid={`dropdownSingleField${idx}`}
               />
               <span className="checkbox mix-blend-darken" />
             </label>

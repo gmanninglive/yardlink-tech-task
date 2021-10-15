@@ -8,7 +8,6 @@ import Featured from "../components/banners/products/Featured";
 import Reviews from "../components/reviews/Reviews";
 
 export default function Home({ data }) {
-  console.log(data);
   return (
     <div className="w-screen min-h-screen relative">
       <Head>
