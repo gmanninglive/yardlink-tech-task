@@ -44,13 +44,12 @@ export default function DropdownSelection({
           <div
             className={`${
               isOpen ? "block" : "hidden"
-            } w-full absolute top-15 bg-white z-50 divide-y divide-gray-100 grid border-2 p-1 rounded-b-md`}
-            id="dropdown"
+            } w-full absolute top-15 bg-white z-50 divide-y divide-gray-100 grid border-2 border-t-0 border-lightblue rounded-b-md`}
           >
             {data && data.map((option, idx) => (
               <label
                 htmlFor={option}
-                className="w-full p-2 relative z-8 input-container"
+                className="bg-transparent w-full p-2 relative z-8 input-container hover:bg-lightblue "
                 key={idx}
               >
                 {option}
@@ -61,8 +60,8 @@ export default function DropdownSelection({
                   className="opacity-0 absolute left-0 bottom-0 h-full w-full cursor-pointer z-10"
                   data-testid={`dropdownField${idx}`}
                 />
-                {/* span classname gives green border when checked */}
-                <span className="checkbox" />
+                {/* span classname gives blue background when checked */}
+                <span className="checkbox mix-blend-darken" />
               </label>
             ))}
           </div>
