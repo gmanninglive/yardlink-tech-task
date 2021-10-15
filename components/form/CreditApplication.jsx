@@ -1,30 +1,31 @@
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import DropdownSelection from "./custominput/DropdownSelection";
+import DropdownSingle from "./custominput/DropdownSingle";
 
-export default function CreditApplicationForm({handleSubmit, values}) {
+export default function CreditApplicationForm({ handleSubmit, values }) {
   // Takes touched input fields and errors. Returns style for valid/invalid fields
   function handleValidation(touched, errors) {
     if (!!touched && !!errors) return "bg-lightred border-darkred";
     else if (!!touched && !errors) return "bg-lightgreen border-darkgreen";
-    
   }
 
   return (
     <Formik
-      initialValues={values? values : initialValues}
+      initialValues={values ? values : initialValues}
       validationSchema={validationSchema}
       onSubmit={(values, isSubmitting) => {
-          handleSubmit(values);
-          console.log(isSubmitting)
-
+        handleSubmit(values);
+        console.log(isSubmitting);
       }}
     >
       {({ isSubmitting, errors, touched }) => (
         <Form className="form-wrapper p-2 lg:p-0 flex flex-col justify-center items-center">
           {/* Account Details */}
           <div className="w-full lg:w-10/12 mt-12 grid md:grid-cols-2 gap-x-2 lg:gap-x-12 gap-y-2 md:gap-y-6">
-            <h2 className="form-heading text-[#292825] md:col-span-2">Account Details</h2>
+            <h2 className="form-heading text-[#292825] md:col-span-2">
+              Account Details
+            </h2>
             <span className="w-full md:mt-14">
               <DropdownSelection
                 className={`form-field ${handleValidation(
@@ -54,20 +55,15 @@ export default function CreditApplicationForm({handleSubmit, values}) {
                   "Waste Clearance",
                 ]}
               />
-              <Field
-                name="company_type"
-                as="select"
+              <DropdownSingle
                 className={`form-field ${handleValidation(
                   touched.company_type,
                   errors.company_type
                 )}`}
-              >
-                <option value="">Company type</option>
-                <option value="Sole Trader">Sole Trader</option>
-                <option value="Partnership">Partnership</option>
-                <option value="LTD">LLC / LTD</option>
-                <option value="PLC">PLC</option>
-              </Field>
+                fieldName="company_type"
+                title="Company type"
+                data={["Sole Trader", "Partnership", "LLC / LTD", "PLC"]}
+              />
             </span>
           </div>
           {/* Contact Information */}
@@ -161,36 +157,30 @@ export default function CreditApplicationForm({handleSubmit, values}) {
                   errors.monthly_spend
                 )}`}
               ></Field>
-              <Field
-                name="projects_no"
+              <DropdownSingle
                 className={`form-field ${handleValidation(
                   touched.projects_no,
                   errors.projects_no
                 )}`}
-                as="select"
-              >
-                <option value="">
-                  Number of live projects at any given time
-                </option>
-                <option value="0-3">0 - 3</option>
-                <option value="3-10">3 - 10</option>
-                <option value="10+">10+</option>
-              </Field>
-              <Field
-                name="projects_size"
+                fieldName="projects_no"
+                title="Number of live projects at any given time"
+                data={["0 - 3", "3 - 10", "10+"]}
+              />
+              <DropdownSingle
                 className={`form-field ${handleValidation(
                   touched.projects_size,
                   errors.projects_size
                 )}`}
-                as="select"
-              >
-                <option value="">Average size of projects</option>
-                <option value="£0-5000">£0 - £5000</option>
-                <option value="£5000 - £25000">£5000 - £25,000</option>
-                <option value="£25000 - £100000">£25000 - £100,000</option>
-                <option value="£100000 - £500000">£100,000 - £500,000</option>
-                <option value="£500000+">£500,000+</option>
-              </Field>
+                fieldName="projects_size"
+                title="Average size of projects"
+                data={[
+                  "£0-5000",
+                  "£5000 - £25000",
+                  "£25000 - £100000",
+                  "£100000 - £1M",
+                  "£1M+",
+                ]}
+              />
               <Field
                 name="credit_required"
                 className={`form-field ${handleValidation(
@@ -202,21 +192,15 @@ export default function CreditApplicationForm({handleSubmit, values}) {
             </span>
             {/* Credit Second Collumn */}
             <div className="w-full flex flex-col gap-y-2 items">
-              <Field
-                name="employees"
+              <DropdownSingle
                 className={`form-field ${handleValidation(
                   touched.employees,
                   errors.employees
                 )}`}
-                as="select"
-              >
-                <option value="">Number of employees</option>
-                <option value="0-3">0 - 3</option>
-                <option value="3-10">3 - 10</option>
-                <option value="10-50">10 - 50</option>
-                <option value="50+">50+</option>
-              </Field>
-
+                fieldName="employees"
+                title="Number of employees"
+                data={["0 - 3", "3 - 10", "10 - 100", "100+"]}
+              />
               <DropdownSelection
                 className={`form-field ${handleValidation(
                   touched.equipment_types,
@@ -232,41 +216,29 @@ export default function CreditApplicationForm({handleSubmit, values}) {
                   "Security",
                 ]}
               />
-
-              <Field
-                name="orders_placed"
+              <DropdownSingle
                 className={`form-field ${handleValidation(
                   touched.orders_placed,
                   errors.orders_placed
                 )}`}
-                as="select"
-              >
-                <option value="">Where are orders normally placed</option>
-                <option value="local">Local branch</option>
-                <option value="online">Online</option>
-                <option value="call">By Phone</option>
-                <option value="sms">Text message</option>
-              </Field>
-              <Field
-                name="po_required"
+                fieldName="orders_placed"
+                title="Where are orders normally placed"
+                data={["Local branch", "Online", "By Phone", "Text message"]}
+              />
+              <DropdownSingle
                 className={`form-field ${handleValidation(
                   touched.po_required,
                   errors.po_required
                 )}`}
-                as="select"
-              >
-                <option value="">
-                  Do all orders require a formal purchase order
-                </option>
-                <option value={false}>No</option>
-                <option value={true}>Yes</option>
-              </Field>
+                fieldName="po_required"
+                title="Do all orders require a formal purchase order"
+                data={["Yes", "No"]}
+              />
             </div>
           </div>
 
           <button
             type="submit"
-            
             className=" my-6 px-20 py-2 rounded-md bg-orange text-white text-center "
           >
             Continue
@@ -333,8 +305,7 @@ export const validationSchema = Yup.object({
   projects_no: Yup.string()
     .max(15, "Must be 10 characters or less")
     .required("Required"),
-  projects_size: Yup.string()
-    .required("Required"),
+  projects_size: Yup.string().required("Required"),
   employees: Yup.string()
     .max(15, "Must be 10 characters or less")
     .required("Required"),
@@ -342,7 +313,7 @@ export const validationSchema = Yup.object({
   orders_placed: Yup.string()
     .max(15, "Must be 10 characters or less")
     .required("Required"),
-  po_required: Yup.boolean().required("Required"),
+  po_required: Yup.string().oneOf(["Yes", "No"]).required("Required"),
   credit_required: Yup.string()
     .max(15, "Must be 10 characters or less")
     .required("Required"),

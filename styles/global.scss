@@ -55,18 +55,15 @@ body {
 
 @layer components {
   .form-field {
-    background-color: theme("colors.lightblue");
-    border-color: theme("colors.darkblue");
-    @apply w-full border-2 px-2 h-12 w-full rounded-md;
+    @apply w-full border-2 px-2 h-12 w-full bg-whiteInactive border-2 border-lightblue rounded-md;
   }
 }
 
 .checkbox {
-  @apply w-full h-full absolute bottom-0 left-0 z-0 opacity-50;
+  @apply w-full h-full absolute bottom-0 left-0 z-0;
 }
 
 .input-container input:checked ~ .checkbox {
-  @apply border-2 border-darkgreen bg-lightgreen rounded-md;
+  @apply bg-lightblue;
 }
-
-
+.dropdown-single input:checked ~ .dropdown-single-label{@apply bg-lightblue opacity-100; }

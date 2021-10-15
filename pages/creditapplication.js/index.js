@@ -42,8 +42,8 @@ export default function CreditIndex() {
       <div>
         <pre>{JSON.stringify(values, null, 2)}</pre>
       </div>
-        <div className="w-full flex justify-around"><buton onClick={() => setIsConfirm(false)} className=" my-6 px-20 py-2 rounded-md bg-orange text-white text-center ">Back</buton>
-        <buton onClick={handleConfirm} className=" my-6 px-20 py-2 rounded-md bg-orange text-white text-center ">Confirm</buton>
+        <div className="w-full flex justify-around"><button onClick={() => setIsConfirm(false)} className=" my-6 px-20 py-2 rounded-md bg-orange text-white text-center ">Back</button>
+        <button onClick={handleConfirm} className=" my-6 px-20 py-2 rounded-md bg-orange text-white text-center ">Confirm</button>
         </div>
     </div>
   );
