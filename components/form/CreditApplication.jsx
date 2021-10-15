@@ -136,9 +136,9 @@ export default function CreditApplicationForm({ handleSubmit, values }) {
           </div>
 
           {/* Credit Information */}
-          <div className="mt-12 lg:w-10/12 grid md:grid-cols-2 gap-x-2 lg:gap-x-12 gap-y-2 md:gap-y-6 ">
+          <div className="mt-12 w-full lg:w-10/12 grid md:grid-cols-2 gap-x-2 lg:gap-x-12 gap-y-2 md:gap-y-6 ">
             <h2 className="text-[#292825] md:col-span-2">
-              Contact Information
+              Credit Information
             </h2>
             <span className="w-full flex flex-col gap-y-2">
               <Field
