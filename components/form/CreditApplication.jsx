@@ -7,7 +7,7 @@ export default function CreditApplicationForm({ handleSubmit, values }) {
   // Takes touched input fields and errors. Returns style for valid/invalid fields
   function handleValidation(touched, errors) {
     if (!!touched && !!errors) return "bg-lightred border-darkred";
-    else if (!!touched && !errors) return "bg-lightgreen border-darkgreen";
+    else if (!!touched && !errors) return "bg-whiteActive border-darkgreen";
   }
 
   return (
