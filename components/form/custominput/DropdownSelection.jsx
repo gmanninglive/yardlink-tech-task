@@ -7,7 +7,7 @@ import useOnClickOutside from "../../../hooks/useClickOutside";
 
 /**
  * @param {string} title, @param {string} fieldName, @param {array} data, @param {string} className
- * @returns Dropdown multiple choice selection
+ * @returns Dropdown single choice selection
  */
 
 export default function DropdownSelection({

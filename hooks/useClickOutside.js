@@ -1,5 +1,13 @@
 import { useEffect } from "react";
 
+/**
+ * 
+ * @param {DomRef} ref 
+ * @param {function} action
+ * 
+ * Takes reference for element. Checks for user clicks.
+ * Action is called when user clicks outside element 
+ */
 export default function useOnClickOutside(ref, action) {
   useEffect(() => {
     function clickOutside(e) {

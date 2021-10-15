@@ -1,3 +1,10 @@
+
+/**
+ * @param {object}values @param {function}setIsConfirm @param {function}handleConfirm 
+ * 
+ * Confirmation page before accessing next stage
+ */
+
 export default function CreditConfirmation({
   values,
   setIsConfirm,

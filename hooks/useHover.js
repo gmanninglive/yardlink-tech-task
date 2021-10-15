@@ -1,5 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 
+/**
+ * 
+ * @returns ref and boolean for hovering element
+ * 
+ * Use case = const [hoverRef, isHovered] = useHover();
+ */
 export default function useHover() {
     const [value, setValue] = useState(false);
     const handleMouseOver = () => setValue(true);

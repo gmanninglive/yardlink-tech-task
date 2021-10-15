@@ -1,6 +1,10 @@
 import StandardCard from '../../cards/StandardCard';
 import categories from './categories.json';
 
+/** 
+ * @param {array} data - Categories data 
+ * @returns Cards mapped to data provided
+ */
 export default function Categories ({data}){
 
     return (
