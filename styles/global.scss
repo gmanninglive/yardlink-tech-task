@@ -10,6 +10,8 @@
 
 html,
 body {
+
+  // Replace placeholder text attributes
   // Chrome, Firefox, Opera, Safari 10.1+
   ::placeholder {
     color: #102754;
@@ -24,6 +26,13 @@ body {
   ::-ms-input-placeholder {
     color: #102754;
   }
+  // Removes blue background for text inputs
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #F7FDF9 inset !important;
+  }
 
   font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -32,7 +41,9 @@ body {
   font-weight: 700;
   color: #102754;
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
   }
