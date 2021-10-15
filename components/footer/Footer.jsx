@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="md:p-20 w-full bg-yardblue text-white flex flex-col lg:flex-row lg:justify-between flex-wrap">
+      <div className="p-6 md:p-20 w-full bg-yardblue text-white flex flex-col lg:flex-row lg:justify-between flex-wrap">
         <ul className="flex flex-col gap-y-4 ">
           <h6>Contact Details</h6>
           <span className="font-normal underline leading-loose">
@@ -43,7 +43,7 @@ export default function Footer() {
             </span>
           </div>
         </ul>
-        <p className="pt-12 text-sm font-normal">
+        <p className=" lg:absolute bottom-12 left-20 pt-12 text-sm font-thin">
             © Copyright 2021 · YardLink
           </p>
       </div>

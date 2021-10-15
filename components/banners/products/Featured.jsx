@@ -1,4 +1,4 @@
-import StandardCard from "../cards/StandardCard";
+import StandardCard from "../../cards/StandardCard";
 
 import featuredProducts from "./featuredproducts.json";
 
@@ -6,7 +6,7 @@ export default function Featured({data}) {
 
   return (
     <>
-      <div className="p-12 ">
+      <div className="p-4 lg:p-12 ">
         {/* Title */}
         <h3 className="py-12 text-2xl font-bold">Featured Products</h3>
         {/* Products */}

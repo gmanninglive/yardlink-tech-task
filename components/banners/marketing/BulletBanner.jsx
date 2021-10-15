@@ -6,7 +6,7 @@ export default function BulletBanner() {
   const title = bulletPoints.title.split("choose");
   return (
     <>
-      <h1 className="md:text-xl font-bold">
+      <h1 className=" font-bold">
         {title[0]}
         <span className="underline">choose</span>
         {title[1]}
@@ -16,17 +16,15 @@ export default function BulletBanner() {
         {bulletPoints.bullets.map((bullet, idx) => {
           return (
             <li
-              className="w-full flex flex-wrap  items-center gap-x-2 md:text-xl font-normal"
+              className="w-full flex  items-center gap-x-2  font-normal"
               key={idx}
             >
-              
-                <Image
-                  src="/branding/icon-tick.svg"
-                  width="30"
-                  height="30"
-                  alt="bullet point tick icon"
-                />
-            
+              <Image
+                src="/branding/icon-tick.svg"
+                width="30"
+                height="30"
+                alt="bullet point tick icon"
+              />
               <p className="w-10/12">{bullet}</p>
             </li>
           );

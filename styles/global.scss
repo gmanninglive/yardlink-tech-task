@@ -1,7 +1,9 @@
 @font-face {
   font-family: "Karla";
-  src: url("/fonts/Karla-Var.ttf") format("truetype"),
+  src: url("/fonts/Karla-Var.ttf") format("truetype");
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,32 +24,20 @@ body {
   ::-ms-input-placeholder {
     color: #102754;
   }
-  
-  .docs-select {
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  
-  
-  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-  "Helvetica Neue", sans-serif;
+
+  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #102754;
-  
+
   h1, h2, h3 {
-      font-family: "Segoe UI", Helvetica, sans-serif;
-      font-weight: 700;
-  }
-  select{
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
   }
-  button{
+
+  button {
     font-weight: 700;
   }
 }
@@ -58,8 +48,8 @@ body {
   }
 }
 
-.createaccount::before{ 
-  content: '';
+.createaccount::before {
+  content: "";
   @apply bg-orange w-[250px] h-[50px] absolute -top-12 left-4  skew-x-45 z-0;
 }
 
@@ -70,4 +60,6 @@ body {
 .input-container input:checked ~ .checkbox {
   @apply bg-lightblue;
 }
-.dropdown-single input:checked ~ .dropdown-single-label{@apply bg-lightblue opacity-100; }
+.dropdown-single input:checked ~ .dropdown-single-label {
+  @apply bg-lightblue opacity-100;
+}

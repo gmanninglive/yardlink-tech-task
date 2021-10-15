@@ -5,15 +5,15 @@ import reviews from "./reviewdata.json";
 export default function Reviews() {
   return (
     <>
-      <section className="p-16 w-full bg-[#F8F8F5]">
+      <section className="p-4 md:p-16 w-full bg-[#F8F8F5]">
         {/* Title */}
         <h1 className="text-2xl font-bold">What Our Customers Are Saying...</h1>
 
         {/* Reviews */}
-        <div className="md:py-16 flex justify-evenly flex-wrap ">
+        <div className="md:py-16 flex justify-evenly flex-wrap gap-4 ">
           {reviews.map((review, idx) => {
             return (
-              <div key={idx} className="w-1/4  bg-white p-6 rounded-md shadow-md ">
+              <div key={idx} className="w-full md:w-1/2 xl:w-1/4 bg-white p-6 rounded-md shadow-md ">
                 {/* Photo, Name, Company Name */}
                 <div className="flex flex-wrap gap-x-6 mb-2">
                   <Image

@@ -1,16 +1,16 @@
 import Head from "next/head";
-import MarketingBanner from "../components/banners/MarketingBanner";
-import Categories from "../components/categories/Categories";
+import MarketingBanner from "../components/banners/marketing/MarketingBanner";
+import Categories from "../components/banners/categories/Categories";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
-import Featured from "../components/products/Featured";
+import Featured from "../components/banners/products/Featured";
 import Reviews from "../components/reviews/Reviews";
 
 export default function Home({ data }) {
   console.log(data);
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen relative">
+    <div className="w-screen min-h-screen relative">
       <Head>
         <title>Tool Hire | Online Tool Hire &amp; Rental | YardLink</title>
         <meta
