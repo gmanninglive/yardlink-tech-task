@@ -79,9 +79,9 @@ export default function CreditConfirmation({
               <h3>Average size of projects</h3>
               {values.projects_size}
               <h3>Credit amount required</h3>
+              {values.credit_required}
             </span>
             <span>
-              {values.credit_required}
               <h3>Number of employees</h3>
               {values.employees}
               <h3>What types of equipment do you hire?</h3>
