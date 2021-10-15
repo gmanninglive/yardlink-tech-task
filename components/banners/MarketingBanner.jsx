@@ -10,7 +10,7 @@ export default function MarketingBanner () {
             <ul className="flex justify-evenly flex-wrap">
                 {bullets.map((bullet, idx) => {
                     return (
-                        <li className="w-1/4 text-center text-xl" key={idx}>{bullet}</li>
+                        <li className="w-1/4 text-center text-black text-xl font-normal" key={idx}>{bullet}</li>
                     )
                 })}
             </ul>

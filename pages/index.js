@@ -7,8 +7,8 @@ import Nav from "../components/nav/Nav";
 import Featured from "../components/products/Featured";
 import Reviews from "../components/reviews/Reviews";
 
-export default function Home({data}) {
-  console.log(data)
+export default function Home({ data }) {
+  console.log(data);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative">
       <Head>
@@ -20,9 +20,8 @@ export default function Home({data}) {
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
+      <Nav />
       <main className="flex flex-col w-full flex-1 relative">
-
-        <Nav />
         <Hero />
         <MarketingBanner />
         <Featured data={data.featured} />
@@ -36,16 +35,18 @@ export default function Home({data}) {
 
 // Consume API on serverside
 export async function getServerSideProps(context) {
-  const res = await fetch("https://my-json-server.typicode.com/yardlynk/yardlink-frontend-test-data/db")
-  const data = await res.json()
+  const res = await fetch(
+    "https://my-json-server.typicode.com/yardlynk/yardlink-frontend-test-data/db"
+  );
+  const data = await res.json();
 
   if (!data) {
     return {
       notFound: true,
-    }
+    };
   }
 
   return {
-    props: {data}, 
-  }
+    props: { data },
+  };
 }
