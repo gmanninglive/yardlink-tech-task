@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches snapshot 1`] = `
+<div
+  className="relative"
+>
+  <button
+    className="test-classname inline-flex items-center justify-between font-bold"
+    data-testid="dropdownSingleButton"
+    onClick={[Function]}
+    type="button"
+  >
+    This is a Test Title!
+    <img
+      alt="open menu"
+      className="undefined transition-all ease-in-out"
+      src="/branding/icon-arrow.svg"
+    />
+  </button>
+  <div
+    className="hidden w-full absolute top-15 bg-white z-50 divide-y divide-gray-100 grid border-2 border-t-0 border-lightblue rounded-b-md "
+  >
+    <label
+      className="bg-transparent w-full p-2 relative z-8 input-container hover:bg-lightblue "
+      htmlFor="Test Value"
+    >
+      Test Value
+      <input
+        checked={false}
+        className="opacity-0
+ absolute left-0 bottom-0 h-full w-full cursor-pointer z-10 dropdown-single"
+        data-testid="dropdownSingleField0"
+        name="This is a Test Field"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        type="radio"
+        value="Test Value"
+      />
+      <span
+        className="checkbox mix-blend-darken"
+      />
+    </label>
+  </div>
+</div>
+`;
