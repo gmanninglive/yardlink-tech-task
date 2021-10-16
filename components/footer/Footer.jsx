@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <div className="p-6 md:p-20 w-full bg-yardblue text-white flex flex-col lg:flex-row lg:justify-between flex-wrap">
-        <ul className="flex flex-col gap-y-4 ">
+      <div className="p-6 md:p-20 w-full bg-yardblue text-white flex flex-col gap-y-6 lg:flex-row lg:justify-between flex-wrap">
+        <ul className="flex flex-col ">
           <h6>Contact Details</h6>
           <span className="font-normal underline leading-loose">
             <li>Talk to us on 020 3642 5223</li>
@@ -12,7 +12,7 @@ export default function Footer() {
           
         </ul>
 
-        <ul className="flex flex-col gap-y-4 ">
+        <ul className="flex flex-col">
           <h6>Yardlink Hire</h6>
           <span className="font-normal underline leading-loose">
             <li>Tool Hire</li>
@@ -22,7 +22,7 @@ export default function Footer() {
             <li>Services</li>
           </span>
         </ul>
-        <ul className="flex flex-col gap-y-4 ">
+        <ul className="flex flex-col ">
           <h6>Useful Information</h6>
           <div className="font-normal underline flex gap-x-12 leading-loose">
             <span>
