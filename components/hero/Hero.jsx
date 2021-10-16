@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <div className="w-full py-16 px-4 ">
         {/* Background Image and Colour Overlay */}
-        <div className="absolute top-16 lg:-top-10 left-0 bg-gradient-to-br from-yardblue to-yardblue bg-blend-overlay  w-full min-h-[50em] z-[-10]"></div>
+        <div className="absolute top-16 bottom-0 left-0 bg-gradient-to-br from-yardblue to-yardblue bg-blend-overlay  w-full h-[50em] z-[-10]"></div>
           <div className="absolute top-16  bottom-0  left-0 w-full h-[50em] bg-hero bg-center bg-cover mix-blend-soft-light z-[-10]"></div>
         
         {/* Hero Content */}
@@ -42,7 +42,7 @@ export default function Hero() {
             </span>
           </section>
           {/* Right Section */}
-          <section className="w-full xl:w-max bg-white p-4 lg:p-8 rounded-sm">
+          <section className="w-full xl:w-max bg-white p-4 lg:p-8 text-left rounded-sm">
             <BulletBanner />
           </section>
         </div>

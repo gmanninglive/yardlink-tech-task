@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MobileNav from "./Mobile";
 
 export default function Nav() {
   return (
@@ -58,6 +59,7 @@ export default function Nav() {
         </div>
         </span>
       </div>
+        <MobileNav />
     </>
   );
 }
