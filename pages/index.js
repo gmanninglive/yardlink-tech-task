@@ -20,7 +20,7 @@ export default function Home({ data }) {
       </Head>
 
       <Nav />
-      <main className="flex flex-col w-full flex-1 relative">
+      <main className="w-full relative">
         <Hero />
         <MarketingBanner />
         <Featured data={data.featured} />
