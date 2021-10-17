@@ -1,25 +1,35 @@
 import Head from "next/head";
 import Link from "next/link";
 import CreditApplicationForm from "../../components/form/CreditApplication";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CreditConfirmation from "../../components/form/CreditConfirmation";
 
 export default function CreditIndex() {
   const [values, setValues] = useState();
   const [isConfirm, setIsConfirm] = useState(false);
 
+  // Takes form data and sets state
   function handleSubmit(values) {
-    console.log(values);
     setValues(values);
     setIsConfirm(true);
   }
 
-  function handleConfirm() {
+  // API POST request sending multi-part form data
+  async function handleConfirm() {
     const formData = new FormData();
     for (const key in values) {
       formData.append(key, values[key]);
     }
+    const res = await fetch("/api/creditapplication", {
+      method: "POST",
+      headers: { "Content-Type": "multipart/form-data" },
+    body: formData})
+    const json = await res.json()
+
+    console.log(json)
   }
+
+  // Show Credit application form
   if (!isConfirm) {
     return (
       <div className="w-screen">
@@ -42,6 +52,7 @@ export default function CreditIndex() {
       </div>
     );
   }
+  // Show confirmation page
   return (
     <div className="w-screen">
       <div className="w-full p-4 bg-darkblue text-white">

@@ -10,7 +10,11 @@
 
 html,
 body {
-
+  ::selection {
+    background: #E9520F;
+    color: white;
+    text-shadow: none;
+  }
   // Replace placeholder text attributes
   // Chrome, Firefox, Opera, Safari 10.1+
   ::placeholder {

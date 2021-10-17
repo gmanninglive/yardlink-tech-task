@@ -10,6 +10,7 @@ import Reviews from "../components/reviews/Reviews";
 export default function Home({ data }) {
   return (
     <div className="w-screen min-h-screen relative">
+      
       <Head>
         <title>Tool Hire | Online Tool Hire &amp; Rental | YardLink</title>
         <meta
