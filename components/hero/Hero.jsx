@@ -24,16 +24,16 @@ export default function Hero() {
               </h2>
             </span>
             {/* Search Bar */}
-            <span className="w-full lg:w-10/12 mx-auto xl:mx-0">
-              <form className="flex">
+            <span className="w-full lg:w-10/12 mx-auto xl:mx-0 ">
+              <form className="flex hover:bg-white rounded-sm">
                 <input
                   type="text"
                   placeholder="What equipment do you need?"
-                  className="w-8/12 p-4 lg:p-5 rounded-tl-sm rounded-bl-sm text-sm md:text-md"
+                  className="w-8/12 p-4 lg:p-7 text-sm md:text-lg"
                 />
                 <button
                   type="submit"
-                  className="w-1/3 bg-orange leading-none text-white rounded-tr-sm rounded-br-sm"
+                  className="w-1/3 bg-orange leading-none text-white rounded-tr-sm rounded-br-sm hover:opacity-50"
                 >
                   Find Equipment
                 </button>

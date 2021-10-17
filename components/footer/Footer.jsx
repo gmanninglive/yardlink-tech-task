@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <div className="p-6 md:p-20 w-full bg-yardblue text-white flex flex-col gap-y-6 lg:flex-row lg:justify-between flex-wrap">
-        <ul className="flex flex-col ">
+        <ul>
           <h6>Contact Details</h6>
           <span className="font-normal underline leading-loose">
             <li>Talk to us on 020 3642 5223</li>
@@ -12,7 +12,7 @@ export default function Footer() {
           
         </ul>
 
-        <ul className="flex flex-col">
+        <ul >
           <h6>Yardlink Hire</h6>
           <span className="font-normal underline leading-loose">
             <li>Tool Hire</li>
@@ -22,7 +22,7 @@ export default function Footer() {
             <li>Services</li>
           </span>
         </ul>
-        <ul className="flex flex-col ">
+        <ul>
           <h6>Useful Information</h6>
           <div className="font-normal underline flex gap-x-12 leading-loose">
             <span>
@@ -43,7 +43,7 @@ export default function Footer() {
             </span>
           </div>
         </ul>
-        <p className=" lg:absolute bottom-12 left-20 pt-12 text-sm font-thin">
+        <p className="w-full -mt-16 pb-20 lg:pb-0 bottom-12 left-20 pt-12 text-sm font-thin">
             © Copyright 2021 · YardLink
           </p>
       </div>

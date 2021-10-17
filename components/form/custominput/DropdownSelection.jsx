@@ -31,6 +31,7 @@ export default function DropdownSelection({
     return (
       <>
         <div className="relative" ref={ref}>
+          {/* Dropdown button */}
           <button
             className={`${className} inline-flex items-center justify-between font-bold`}
             type="button"
@@ -40,7 +41,7 @@ export default function DropdownSelection({
             {title}
             <img src="/branding/icon-arrow.svg" alt="open menu" className={`${isOpen && "transform rotate-180"} transition-all ease-in-out`} />
           </button>
-  
+          {/* Dropdown selection */}
           <div
             className={`${
               isOpen ? "block" : "hidden"

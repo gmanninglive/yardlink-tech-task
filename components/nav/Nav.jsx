@@ -50,7 +50,7 @@ export default function Nav() {
         <div className="hidden lg:block relative w-[200px]">
           <div className="createaccount">
           <Link href="/creditapplication">
-            <a className="absolute -top-6 left-16 text-white text-sm  underline z-10">
+            <a className="absolute -top-8 left-16 text-white text-md  underline z-10">
               Create Account
             </a>
           </Link>

@@ -22,7 +22,7 @@ export default function CreditApplicationForm({ handleSubmit, values }) {
       {({ isSubmitting, errors, touched }) => (
         <Form className="form-wrapper p-2 lg:p-0 flex flex-col justify-center items-center">
           {/* Account Details */}
-          <div className="w-full lg:w-10/12 mt-12 grid md:grid-cols-2 gap-x-2 lg:gap-x-12 gap-y-2 md:gap-y-6">
+          <div className="w-full lg:w-10/12 lg:mt-12 grid md:grid-cols-2 gap-x-2 lg:gap-x-12 gap-y-2 md:gap-y-6">
             <h2 className="form-heading text-[#292825] md:col-span-2">
               Account Details
             </h2>

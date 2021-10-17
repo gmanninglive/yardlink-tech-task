@@ -10,6 +10,7 @@
 
 html,
 body {
+  // Text hightlight color
   ::selection {
     background: #E9520F;
     color: white;
@@ -57,17 +58,20 @@ body {
   }
 }
 
+// All input fields
 @layer components {
   .form-field {
-    @apply w-full border-2 px-2 h-12 w-full bg-whiteInactive border-2 border-lightblue rounded-md;
+    @apply w-full border-2 px-2 h-12 w-full bg-whiteInactive border-2 border-lightblue rounded-md font-bold;
   }
 }
 
+// Nav bar skewed square
 .createaccount::before {
   content: "";
   @apply bg-orange w-[250px] h-[50px] absolute -top-12 left-4  skew-x-45 z-0;
 }
 
+// Custom dropdown component
 .checkbox {
   @apply w-full h-full absolute bottom-0 left-0 z-0;
 }
@@ -75,6 +79,4 @@ body {
 .input-container input:checked ~ .checkbox {
   @apply bg-lightblue;
 }
-.dropdown-single input:checked ~ .dropdown-single-label {
-  @apply bg-lightblue opacity-100;
-}
+

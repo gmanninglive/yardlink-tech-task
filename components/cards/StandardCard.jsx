@@ -28,7 +28,7 @@ export default function StandardCard({ data }) {
           </div>
           <p className="p-4 font-bold">{title}</p>
         
-          <p className={`text-white text-center 
+          <p className={`text-white text-center hover:opacity-50 
             ${isHovered ?
              "absolute opacity-1 -translate-y-2 transition ease-in-out w-full bg-orange p-2"
             : "absolute opacity-0 translate-y-10" }`}>

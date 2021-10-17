@@ -26,6 +26,7 @@ export default function DropdownSingle({ title, fieldName, data, className }) {
   return (
     <>
       <div className="relative" ref={ref}>
+        {/* Dropdown button */}
         <button
           className={`${className} inline-flex items-center justify-between font-bold`}
           type="button"
@@ -41,7 +42,7 @@ export default function DropdownSingle({ title, fieldName, data, className }) {
             } transition-all ease-in-out`}
           />
         </button>
-
+        {/* Dropdown selection */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
@@ -58,7 +59,7 @@ export default function DropdownSingle({ title, fieldName, data, className }) {
                 type="radio"
                 name={fieldName}
                 className="opacity-0
-                 absolute left-0 bottom-0 h-full w-full cursor-pointer z-10 dropdown-single"
+                 absolute left-0 bottom-0 h-full w-full cursor-pointer z-10"
                 value={option}
                 onClick={() => setIsOpen(false)}
                 data-testid={`dropdownSingleField${idx}`}

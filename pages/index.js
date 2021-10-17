@@ -10,7 +10,7 @@ import Reviews from "../components/reviews/Reviews";
 export default function Home({ data }) {
   return (
     <div className="w-screen min-h-screen relative">
-      
+      {/* MetaData */}
       <Head>
         <title>Tool Hire | Online Tool Hire &amp; Rental | YardLink</title>
         <meta
@@ -19,7 +19,7 @@ export default function Home({ data }) {
         />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-
+      
       <Nav />
       <main className="w-full relative">
         <Hero />
